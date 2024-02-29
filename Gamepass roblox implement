@@ -1,9 +1,0 @@
-local gamepassid = 125876544
-local services = game:GetService("MarketplaceService")
-game.Players.PlayerAdded:Connect(function(player)
- if (services:UserOwnsGamePassAsync(player.UserId,gamepassid)) then
-   player.Team = Teams.Vip
-    
-    end
- end)
-
